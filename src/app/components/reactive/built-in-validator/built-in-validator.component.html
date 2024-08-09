@@ -1,0 +1,13 @@
+<form [formGroup]="form">
+  <input matInput type="email" name="email"
+      placeholder="Email" formControlName="email">
+      
+  <input matInput type="password"
+      placeholder="Password" formControlName="password">
+
+      <input matInput type="password"
+      placeholder="Confirm password"
+      formControlName="confirmPassword">
+      
+  <button [disabled]="!form.valid">Login</button>
+</form>
